@@ -14,6 +14,8 @@ android {
     buildTypes {
 
         buildTypes.each {
+            //"key.properties" is a file at project root level which is need to be created and API key should be added to it as below.
+            //MOVIE_DB_API_KEY = \"YOUR_API_KEY\"
             def props = new Properties()
             props.load(project.rootProject.file('key.properties').newDataInputStream())
             it.buildConfigField('String', 'MOVIE_DB_API_KEY', props.getProperty("MOVIE_DB_API_KEY"))
