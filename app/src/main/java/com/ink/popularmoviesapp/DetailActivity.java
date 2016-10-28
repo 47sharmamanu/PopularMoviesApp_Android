@@ -12,7 +12,6 @@ public class DetailActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             //setting values(Uri) in argument of fragment
-            //this is added in create branch and should not be in master.
             Bundle arguments = new Bundle();
             arguments.putParcelable(DetailFragment.DETAIL_URI, getIntent().getData());
             DetailFragment df = new DetailFragment();
