@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Popular Movies App</string>
+
+    <!--preference related-->
+
+    <!--units-->
+    <string name="pref_units_title">Movie List Preference</string>
+    <string name="pref_units_key">filter</string>
+    <string name="pref_units_default_value">popular</string>
+    <string-array name="filter_array">
+        <item>Popular</item>
+        <item>Top rated</item>
+    </string-array>
+
+    <string-array name="filter_stored_array">
+        <item>popular</item>
+        <item>top_rated</item>
+    </string-array>
+
+    <string name="content_authority">com.ink.popularmoviesapp.provider</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
