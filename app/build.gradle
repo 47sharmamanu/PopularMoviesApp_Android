@@ -14,7 +14,9 @@ android {
     buildTypes {
 
         buildTypes.each {
-            it.buildConfigField('String', 'MOVIE_DB_API_KEY', MOVIE_DB_API_KEY)
+            def props = new Properties()
+            props.load(project.rootProject.file('key.properties').newDataInputStream())
+            it.buildConfigField('String', 'MOVIE_DB_API_KEY', props.getProperty("MOVIE_DB_API_KEY"))
         }
 
         release {
