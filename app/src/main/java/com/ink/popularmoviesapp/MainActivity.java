@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity implements MovieListFragment
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //this is stage1 branch
+        //this is stage2 branch
         super.onCreate(savedInstanceState);
         PreferenceManager.setDefaultValues(this, R.xml.pref_general, false);
         setContentView(R.layout.activity_main);
